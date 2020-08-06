@@ -10,7 +10,7 @@ const forecast= (latitude,longitute,callback)=>{
         } else if (body.error) {
             callback('Unable to find location'+body.error,undefined)
         } else {
-            callback(undefined,body.weather[0].description + ', It is currently ' + body.main.temp + ' degress out. Cloud percentage is ' + body.clouds.all + ' %.')   
+            callback(undefined,body.weather[0].description + ', It is currently ' + body.main.temp + ' degress out.This high today is ' + body.main.temp_max +' with a low of ' + body.main.temp_min +' Cloud percentage is ' + body.clouds.all + ' %.')   
         }
     })
    }
