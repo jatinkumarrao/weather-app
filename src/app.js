@@ -62,7 +62,7 @@ app.get('/help',(req,res) =>{
 
 app.get('',(req,res) =>{
     res.render('index', {
-        title: 'weather app',
+        title: 'Weather App',
         name:'Jatin Kumar Rao'
     })
 })
